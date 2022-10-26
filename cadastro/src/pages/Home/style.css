@@ -1,0 +1,82 @@
+.home > * {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    padding: 8px;
+    color: #fff;
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+.home div span {
+    margin: 5px auto;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bbb;
+}
+
+.home div span * {
+    display: inline;
+}
+
+.home div span:last-child {
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+.home div span input {
+    font-size: 16px; 
+    border: 1px solid #ddd;
+    width: 40%;
+}
+
+.buttons {
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.buttons button {
+    margin-top: 15px;
+    flex: 1;
+    height: 2rem;
+
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all ease-out 0.3s;
+}
+
+.buttons .delete {
+    color: #222;
+    background-image: url(./assets/background.jpg);
+}
+
+.buttons .delete:hover {
+    color: #eee;
+    border-color: #012d5b;
+    background: #214dab;
+}
+
+.buttons .update {
+    background-color: #fff;
+    transition: background-color ease-out 0.3s;
+}
+
+.buttons .update:hover {
+    border-color: #ddd;
+    background: #ddd;
+}
